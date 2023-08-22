@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  list-style: none;
+  font-family: 'Poppins';
+  text-decoration: none;
+}
+
+
+
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 20px;
+  z-index: 9999;
+  background-color: beige;
+}
+
+.navbar a {
+  color: blue;
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar .navlinks ul {
+  display: flex; 
+}
+
+.nav-links {
+  
+  position: absolute;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.299);
+  backdrop-filter: blur(5px);
+  filter: blur(1);
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.nav-links li:hover {
+  color: blue;
+}
+
+.nav-links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar .menu-hamburger {
+  width: 35px;
+  z-index: 90999999;
+}
+
+.navbar .nav-links ul li {
+  margin: 25px 0;
+}
+
+.navbar .nav-links li {
+  font-size: 1.6em;
+}
+
+.mobile-menu  {
+  display: none;
+  translate: 0;
+}
+
+.carousel {
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 100px; /* Vous pouvez ajuster cette valeur selon vos besoins */
+}
+
+.carousel img {
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
+.carousel img.active {
+  opacity: 1;
+}
+
+
+/* sign up page style */
+
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 200px;
+  align-items: center;
+  padding: 20px;
+}
+
+.signup-form form input {
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  border-color: #3498db;
+}
+
+
+.signup-form button  {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
